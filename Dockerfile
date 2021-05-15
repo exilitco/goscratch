@@ -1,5 +1,5 @@
-# Using latest golang version
-FROM golang:latest as builder
+# Using latest alpine golang version
+FROM golang:alpine as builder
 RUN apk update && apk add --no-cache ca-certificates tzdata && update-ca-certificates
 
 # Copy only timezone data and ssl certificates
